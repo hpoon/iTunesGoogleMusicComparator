@@ -133,13 +133,9 @@ def main():
 
     print("Not accounted for:")
     print(tabulate(notAccountedFor, headers=["Title", "Artist", "Album"]))
-    #for song in notAccountedFor:
-    #    print("Title: " + song.title + "\t\tArtist: " + song.artist + "\t\tAlbum: " + song.album)
     print("\nDuplicates:")
     print(tabulate(duplicates, headers=["Title", "Artist", "Album"]))
-    #for song in duplicates:
-    #    print("Title: " + song.title + "\t\tArtist: " + song.artist + "\t\tAlbum: " + song.album)
-    
+   
     print("iTunes Songs: " + str(len(itunesSongSet)))
     print("Google Songs: " + str(len(gmusicSongSet)))
     print("Accounted for: " + str(len(accountedFor)))
